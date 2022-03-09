@@ -8,20 +8,20 @@
 
 # Author: Daria Sep
 
-numbers = []
-
 number = int (input ('Please input a number: '))
 
 while number != 1: 
-    if (number % 2) == 0:
-        number = number / 2
-    else:
-        number = (number * 3) + 1
+
+    print(number, end = ' ')  
+    # ref: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
     
-    numbers.append (int (number))
+    if (number % 2) == 0:
+        number = int (number / 2)
+    else:
+        number = int ((number * 3) + 1)
 
-print (numbers)
+print (number)
 
-# output doesnt include initial input. Need to review
+# WIP -> add ValueError
 
 
