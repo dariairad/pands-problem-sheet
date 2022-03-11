@@ -149,7 +149,8 @@ else:
 
 ### References
 1. geeksforgeeks.com - Python datetime module. https://www.geeksforgeeks.org/python-datetime-module/
-2. python.org - datetime — Basic date and time types. https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+2. python.org - Basic date and time types. https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+3. pythontic.com - Weekday Function In Python. https://pythontic.com/datetime/date/weekday
 
 
 ## Week 06
