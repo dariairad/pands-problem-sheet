@@ -120,6 +120,8 @@ print (number)
 
 1. codippa.com - Check if number is even or odd. https://codippa.com/even-odd-python/
 2. geeksforgeeks.com - Python end parameter in print(). https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
+3. pythonppl.com - Understanding Collatz Sequence in Python. https://www.pythonpool.com/collatz-sequence-python/
+4. realpython.com - Python "while" Loops (Indefinite Iteration). https://realpython.com/python-while-loop/
 
 
 ## Week 05 - Data
