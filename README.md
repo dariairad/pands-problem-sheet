@@ -159,12 +159,20 @@ else:
 
 ### Task description
 
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+You should create a function called <tt>sqrt</tt> that does this.
+
 ### Code
 
 ### Explanation
 
 ### References
 
+1. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
+2. geeksforgeeks.com - Find root of a number using Newton’s method. https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+3. runestone.academy - How to Think Like a Computer Scientist. https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
+4. school-for-champions.com - Newton's Square Root Approximation. https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
 ## Week 07
 
