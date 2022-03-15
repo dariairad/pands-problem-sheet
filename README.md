@@ -13,7 +13,7 @@ Andrew Beatty (andrew.beatty@gmit.ie)
 
 ## Overview
 
-This repository is a submission to *Problem Sheet* assignment associated with the *Programming ans Scripting* module. 
+This repository is a submission to *Problem Sheet* assignment associated with the *Programming and Scripting* module. 
 
 The repository itself contains 7 .py files that present solutions to 7 weekly tasks set throughout the course. 
   
