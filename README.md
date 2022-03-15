@@ -120,6 +120,8 @@ print (number)
 
 1. codippa.com - Check if number is even or odd. https://codippa.com/even-odd-python/
 2. geeksforgeeks.com - Python end parameter in print(). https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
+3. pythonppl.com - Understanding Collatz Sequence in Python. https://www.pythonpool.com/collatz-sequence-python/
+4. realpython.com - Python "while" Loops (Indefinite Iteration). https://realpython.com/python-while-loop/
 
 
 ## Week 05 - Data
@@ -149,12 +151,16 @@ else:
 
 ### References
 1. geeksforgeeks.com - Python datetime module. https://www.geeksforgeeks.org/python-datetime-module/
-2. python.org - datetime — Basic date and time types. https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+2. python.org - Basic date and time types. https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+3. pythontic.com - Weekday Function In Python. https://pythontic.com/datetime/date/weekday
 
 
 ## Week 06
 
 ### Task description
+
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+You should create a function called <tt>sqrt</tt> that does this.
 
 ### Code
 
@@ -162,6 +168,11 @@ else:
 
 ### References
 
+1. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
+2. geeksforgeeks.com - Find root of a number using Newton’s method. https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+3. runestone.academy - How to Think Like a Computer Scientist. https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
+4. school-for-champions.com - Newton's Square Root Approximation. https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
 ## Week 07
 
