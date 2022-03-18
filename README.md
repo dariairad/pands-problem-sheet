@@ -179,12 +179,19 @@ You should create a function called <tt>sqrt</tt> that does this.
 
 ### Task description
 
+Write a program that reads in a text file and outputs the number of e's it contains. 
+Think about what is being asked here, document any assumptions you are making.
+The program should take the filename from an argument on the command line. 
+
 ### Code
 
 ### Explanation
 
 ### References
 
+geeksforgeeks.com - Count the number of times a letter appears in a text file. https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+note.nkmk.me - How to return multiple values from a function in Python. https://note.nkmk.me/en/python-function-return-multiple-values/
+realpython.com - Lists and Tuples in Python. https://realpython.com/python-lists-tuples/
 
 ## Week 08
 
