@@ -13,7 +13,7 @@ Andrew Beatty (andrew.beatty@gmit.ie)
 
 ## Overview
 
-This repository is a submission to *Problem Sheet* assignment associated with the *Programming ans Scripting* module. 
+This repository is a submission to *Problem Sheet* assignment associated with the *Programming and Scripting* module. 
 
 The repository itself contains 7 .py files that present solutions to 7 weekly tasks set throughout the course. 
   
@@ -122,6 +122,7 @@ print (number)
 2. geeksforgeeks.com - Python end parameter in print(). https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
 3. pythonppl.com - Understanding Collatz Sequence in Python. https://www.pythonpool.com/collatz-sequence-python/
 4. realpython.com - Python "while" Loops (Indefinite Iteration). https://realpython.com/python-while-loop/
+5. Sweigart, A. (2020). Automate the Boring Stuff with Python. 2nd ed. San Francisco: No Starch Press.
 
 
 ## Week 05 - Data
@@ -168,10 +169,10 @@ You should create a function called <tt>sqrt</tt> that does this.
 
 ### References
 
-1. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
-2. geeksforgeeks.com - Find root of a number using Newton’s method. https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
-3. runestone.academy - How to Think Like a Computer Scientist. https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
-4. school-for-champions.com - Newton's Square Root Approximation. https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+1. geeksforgeeks.com - Find root of a number using Newton’s method. https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+2. runestone.academy - How to Think Like a Computer Scientist. https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
+3. school-for-champions.com - Newton's Square Root Approximation. https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+4. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
 5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
 ## Week 07
