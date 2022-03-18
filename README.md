@@ -17,7 +17,7 @@ This repository is a submission to *Problem Sheet* assignment associated with th
 
 The repository itself contains 7 .py files that present solutions to 7 weekly tasks set throughout the course. 
   
-The purpose of this README file is to provide insights into the process of the author, their understanding of the code used, as well as research executed and refernences used.
+The purpose of this README file is to provide insights into the process of writing the code, understanding of the code, as well as the research and refernences used.
 
 
 ## Week 02 - Statements
@@ -49,9 +49,9 @@ print ('\nYour BMI is {}'.format(bmi))
 
 ### References
 
-1. diabetes.ca - Body Mass Index (BMI) Calculator. https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
-2. geeksforgeeks.com - Python Arithmetic Operators. https://www.geeksforgeeks.org/python-arithmetic-operators/
-4. w3schools.com - Built-in Functions. https://www.w3schools.com/python/python_ref_functions.asp
+1. diabetes.ca - *Body Mass Index (BMI) Calculator.* https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
+2. geeksforgeeks.com - *Python Arithmetic Operators.* https://www.geeksforgeeks.org/python-arithmetic-operators/
+4. w3schools.com - *Built-in Functions.* https://www.w3schools.com/python/python_ref_functions.asp
 
 
 ## Week 03 - Variables
@@ -77,8 +77,8 @@ print (sentence [::-2])
 
 ### References
 
-1. w3schools.com - How to Reverse a String in Python. https://www.w3schools.com/python/python_howto_reverse_string.asp
-2. w3schools.com - Python slice() Function. https://www.w3schools.com/python/ref_func_slice.asp
+1. w3schools.com - *How to Reverse a String in Python.* https://www.w3schools.com/python/python_howto_reverse_string.asp
+2. w3schools.com - *Python slice() Function.* https://www.w3schools.com/python/ref_func_slice.asp
 
 
 ## Week 04 - Controlling the flow
@@ -118,11 +118,11 @@ print (number)
 
 ### References
 
-1. codippa.com - Check if number is even or odd. https://codippa.com/even-odd-python/
-2. geeksforgeeks.com - Python end parameter in print(). https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
-3. pythonppl.com - Understanding Collatz Sequence in Python. https://www.pythonpool.com/collatz-sequence-python/
-4. realpython.com - Python "while" Loops (Indefinite Iteration). https://realpython.com/python-while-loop/
-5. Sweigart, A. (2020). Automate the Boring Stuff with Python. 2nd ed. San Francisco: No Starch Press.
+1. codippa.com - *Check if number is even or odd.* https://codippa.com/even-odd-python/
+2. geeksforgeeks.com - *Python end parameter in print().* https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
+3. pythonppl.com - *Understanding Collatz Sequence in Python.* https://www.pythonpool.com/collatz-sequence-python/
+4. realpython.com - *Python "while" Loops (Indefinite Iteration).* https://realpython.com/python-while-loop/
+5. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
 
 
 ## Week 05 - Data
@@ -151,9 +151,9 @@ else:
 3. Integers 0-4 correspond to Monday-Friday respectively, therefore any integer lower than 5 (< 5) corresponds to a weekday. 
 
 ### References
-1. geeksforgeeks.com - Python datetime module. https://www.geeksforgeeks.org/python-datetime-module/
-2. python.org - Basic date and time types. https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
-3. pythontic.com - Weekday Function In Python. https://pythontic.com/datetime/date/weekday
+1. geeksforgeeks.com - *Python datetime module.* https://www.geeksforgeeks.org/python-datetime-module/
+2. python.org - *Basic date and time types.* https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+3. pythontic.com - *Weekday Function In Python.* https://pythontic.com/datetime/date/weekday
 
 
 ## Week 06
@@ -169,9 +169,9 @@ You should create a function called <tt>sqrt</tt> that does this.
 
 ### References
 
-1. geeksforgeeks.com - Find root of a number using Newton’s method. https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
-2. runestone.academy - How to Think Like a Computer Scientist. https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
-3. school-for-champions.com - Newton's Square Root Approximation. https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+1. geeksforgeeks.com - *Find root of a number using Newton’s method.* https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+2. runestone.academy - *How to Think Like a Computer Scientist.* https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
+3. school-for-champions.com - *Newton's Square Root Approximation.* https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
 4. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
 5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
@@ -189,9 +189,11 @@ The program should take the filename from an argument on the command line.
 
 ### References
 
-geeksforgeeks.com - Count the number of times a letter appears in a text file. https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-note.nkmk.me - How to return multiple values from a function in Python. https://note.nkmk.me/en/python-function-return-multiple-values/
-realpython.com - Lists and Tuples in Python. https://realpython.com/python-lists-tuples/
+1. Coding Under Pressure - *Command Line Arguments in Python - How to Read Command Line Arguments in Python.* https://youtu.be/QJBVjBq4c7E
+2. geeksforgeeks.com - *Count the number of times a letter appears in a text file.* https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+3. note.nkmk.me - *How to return multiple values from a function in Python.* https://note.nkmk.me/en/python-function-return-multiple-values/
+4. realpython.com - *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
+
 
 ## Week 08
 
