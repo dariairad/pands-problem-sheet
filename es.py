@@ -5,22 +5,28 @@
 # Think about what is being asked here, document any assumptions you are making.
 # The program should take the filename from an argument on the command line.
 
+import sys
 
+filename = sys.argv[1]  # takes in command line argument. argv[0] would be a path to this file
 
-filename = (input('Input filename including directory: ')) # WIP - fix file path input
-
-letter = 'e' # change all letters to lowercase first so Es are counted too. 
-# assuming that both are to be counted but included separate numbers in the output message.
-letter2 = letter.upper()
+letter = 'e' 
+letter2 = letter.upper()  
+# Could be letter2 = 'E'
+# letter 2 = letter.upper() would be more useful if we were reading in user's input for the letter
 
 def countEs(filename, letter):
     with open(filename) as f:
         text = f.read()
-        numberLower = text.count(letter)
-        numberUpper = text.count(letter2)    
-        totalNumber = numberLower + numberUpper 
+        numberLower = text.count(letter)   # counts instances of 'e'
+        numberUpper = text.count(letter2)  # counts instances of 'E'
+        totalNumber = numberLower + numberUpper # sums both for total number instances of the letter despite of case
         
-        return totalNumber
+        return (numberLower, numberUpper, totalNumber)
 
-number = countEs (filename, letter)
-print (f'This file contains {number} instances of letter "e"')
+values = countEs (filename, letter)   # function countES () returns multiple values as a tuple
+
+lower = values [0] # storing each value as a separte variable for use in message
+upper = values [1]
+total = values [2]
+
+print (f'This file contains total of {total} instances of letter "e" {lower} of witch are lowercase and {upper} are uppercase')
