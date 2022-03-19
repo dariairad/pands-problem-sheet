@@ -6,7 +6,7 @@
 import numpy as np
 import matplotlib.pyplot as plot
 
-xpoints = np.array (range (0, 4))
+xpoints = np.array (range (0, 5))
 ypointsf = xpoints              # f(x)=x
 ypointsg = xpoints * xpoints    # g(x)=x2
 ypointsh = xpoints ** 3         # h(x)=x3
