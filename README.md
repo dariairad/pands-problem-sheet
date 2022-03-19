@@ -230,8 +230,14 @@ print (f'This file contains a total of {total} instances of letter "e". \nOut of
 
 ### Task description
 
+Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+
 ### Code
+
+[plotTask.py](https://github.com/dariairad/pands-problem-sheet/blob/main/plottask.py)
 
 ### Explanation
 
 ### References
+
+
