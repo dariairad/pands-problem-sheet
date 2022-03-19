@@ -185,6 +185,33 @@ The program should take the filename from an argument on the command line.
 
 ### Code
 
+```
+import sys
+
+filename = sys.argv[1]  
+
+def countEs(filename):      
+    with open(filename) as f:
+        text = f.read()
+        numLower = numUpper = numTotal = 0  # starting to count from 0
+        for i in text:
+            if i == 'e':        
+                numLower += 1   
+                numTotal += 1   
+            elif i == 'E':
+                numUpper += 1   
+                numTotal += 1                      
+        return (numLower, numUpper, numTotal)
+
+values = countEs (filename)
+
+lower = values [0] 
+upper = values [1]
+total = values [2]
+
+print (f'This file contains a total of {total} instances of letter "e". \nOut of {total}, {lower} are lowercase and {upper} are uppercase.')
+```
+
 ### Explanation
 
 ### References
@@ -192,8 +219,8 @@ The program should take the filename from an argument on the command line.
 1. Coding Under Pressure - *Command Line Arguments in Python - How to Read Command Line Arguments in Python.* https://youtu.be/QJBVjBq4c7E
 2. geeksforgeeks.com - *Count the number of times a letter appears in a text file.* https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 3. note.nkmk.me - *How to return multiple values from a function in Python.* https://note.nkmk.me/en/python-function-return-multiple-values/
-4. realpython.com - *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
-
+4. python.org - *sys — System-specific parameters and functions.* https://docs.python.org/3/library/sys.html#module-sys
+5. realpython.com - *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
 
 ## Week 08
 
