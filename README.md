@@ -165,6 +165,8 @@ You should create a function called <tt>sqrt</tt> that does this.
 
 ### Code
 
+[squareRoot.py](https://github.com/dariairad/pands-problem-sheet/blob/main/squareRoot.py)
+
 ### Explanation
 
 ### References
@@ -211,6 +213,8 @@ total = values [2]
 
 print (f'This file contains a total of {total} instances of letter "e". \nOut of {total}, {lower} are lowercase and {upper} are uppercase.')
 ```
+
+[es.py](https://github.com/dariairad/pands-problem-sheet/blob/main/es.py)
 
 ### Explanation
 
