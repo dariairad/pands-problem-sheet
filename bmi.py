@@ -13,7 +13,7 @@
 # Author: Daria Sep
 
 
-name = input('Welcome to the BMI Calculator! \nWhat\'s your name?: ')
+name = input('Welcome to the BMI Calculator! \nWhat\'s your name? ')
 print (f'Hello {name}! Let\'s calculate your BMI.') 
 
 # Defining function calculating BMI. 
@@ -28,7 +28,7 @@ while True:
         if weight == "" or weight <= 0:
             raise ValueError ('Incorrect value entered.')
     except ValueError:
-            print("Sorry, that's not right. Please try again")      
+            print("Sorry, that's not right. Please try again.")      
     else: 
         break   
 
@@ -38,7 +38,7 @@ while True:
         if height == "" or height <= 0:
             raise ValueError ('Incorrect value entered.')
     except ValueError: 
-        print("Sorry, that's not right. Please try again")
+        print("Sorry, that's not right. Please try again.")
     else: 
         break
             
