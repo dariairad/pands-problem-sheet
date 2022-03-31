@@ -6,7 +6,7 @@
 
 # Author: Daria Sep
 
-while True:     # To prompt another input request in case of value error
+while True:     # to prompt another input request in case of value error
     try:        # try/except to catch exceptions (0, negative, blank or non-int input)
         number = int (input ('Please input a positive integer: '))
         if number <= 0 or number == '':
@@ -24,4 +24,4 @@ while number != 1:  # to continue calculations until number is equal to 1
     else:
         number = int ((number * 3) + 1)
     
-print (number) # inlcues last output (1) 
+print (number) # includes last calculation output (1) to the output message
