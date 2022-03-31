@@ -30,28 +30,64 @@ The inputs are the person's height in centimetres and weight in kilograms. The o
 ### Code
 
 ```
-name = input('Enter your name: ')
-print ('Hello {}! Let\'s calculate your BMI.' .format (name))
+name = input('Welcome to the BMI Calculator! \nWhat\'s your name? ')
+print (f'Hello {name}! Let\'s calculate your BMI.') 
 
-weight = int (input ('\nEnter your weight in kg: '))
-height = int (input ('Enter your height in cm: '))
-bmi = round (((weight / (height ** 2) * 10000)), 2)
+def bmiIndex(weight, height):
+    rawBmi = (weight / (height ** 2) * 10000)
+    return rawBmi
 
-print ('\nYour BMI is {}'.format(bmi))
+while True:
+    try: 
+        weight = float (input ('Enter your weight in kg: '))
+        if weight == "" or weight <= 0:
+            raise ValueError ('Incorrect value entered.')
+    except ValueError:
+            print("Sorry, that's not right. Please try again.")      
+    else: 
+        break   
+
+while True: 
+    try:
+        height = float (input ('Enter your height in cm: '))
+        if height == "" or height <= 0:
+            raise ValueError ('Incorrect value entered.')
+    except ValueError: 
+        print("Sorry, that's not right. Please try again.")
+    else: 
+        break
+            
+bmi = round (bmiIndex (weight, height), 2)
+
+if bmi < 18.5: 
+    print (f'Your BMI is {bmi}. You might be underweight.')
+elif  bmi < 25:
+    print (f'Your BMI is {bmi}. You\'re a healthy weight.')
+elif  bmi < 30:
+    print(f'Your BMI is {bmi}. You might be overweight.')
+else:
+    print (f'Your BMI is {bmi}. You might be obese.')
 ```
 [bmi.py](https://github.com/dariairad/pands-problem-sheet/blob/main/bmi.py)
 
 ### Explanation
 
-1. The `input()` function allows user input. User input being used in the program: *name* - for personalised welcome message, *weight* and *height* - for BMI calculations.
-2. Value read with `input()` function is in a string format. Used the int() constructor, that returns an integer number, to convert *weight* and *height* inputs into integers thus allowing for arithmetic operations.
-3. The `round()` function rounds a number to the specified number of decimal. Initially rounded to 1 decimal point, changed to 2 decimal points as per interim feedback  
+1. Used `input()` function to allow user input. User input being used in the program: *name* - for personalised welcome message, and later on, *weight* and *height* - for BMI calculations.
+2. Created custom function `bmiIndex()` that takes in two arguments: *weight* and *height*, and includes formula for calculating BMI.
+3. As the program takes in *weight* and *height* from user input I used `try / except` to catch `ValueErrors` - non-numerical input, blank input, and numerical input equal or less than 0.
+4. Along with `try/except`, I used the `while` loop to keep prompting the user for correct input after the exception was raised.
+5. As values read in with `input()` function are in a string format, I used the `float()` constructor that returns a float number to convert *weight* and *height* inputs into floats thus allowing for arithmetic operations.
+6. I called in a function and rounded the utput to 2 decimal places using the `round()` function.
+7. Used `if` statement to interpret the BMI and to provide the user with context regarding their result. 
 
 ### References
 
 1. diabetes.ca - *Body Mass Index (BMI) Calculator.* https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
-2. geeksforgeeks.com - *Python Arithmetic Operators.* https://www.geeksforgeeks.org/python-arithmetic-operators/
-4. w3schools.com - *Built-in Functions.* https://www.w3schools.com/python/python_ref_functions.asp
+2. Elkner, J. (2020). - *Beginning Python Programming for Aspiring Web Developers.* https://www.openbookproject.net/books/bpp4awd/ch04.html  
+3. geeksforgeeks.com - *Python Arithmetic Operators.* https://www.geeksforgeeks.org/python-arithmetic-operators/ 
+4. stackoverflow.com - *BMI with exception handling python.* https://stackoverflow.com/questions/51125220/bmi-with-exception-handling-python 
+5. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
+6. w3schools.com - *Built-in Functions.* https://www.w3schools.com/python/python_ref_functions.asp
 
 
 ## Week 03 - Variables
