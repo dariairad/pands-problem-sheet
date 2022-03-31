@@ -208,18 +208,79 @@ else:
 3. pythontic.com - *Weekday Function In Python.* https://pythontic.com/datetime/date/weekday
 
 
-## Week 06
+## Week 06 - Functions
 
 ### Task description
 
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 You should create a function called <tt>sqrt</tt> that does this.
+Create your own sqrt function and do not use the built in functions x ** .5 or math.sqrt(x).
+This is to demonstrate that you can research and code a process.
+Suggestion: Look at the newton method of estimating square roots.
 
 ### Code
+
+```
+def sqrt(n): 
+    approx = 0.5 * n   
+    better = 0.5 * (approx + (n / approx))
+    while better != approx :   
+        approx = better
+        better = 0.5 * (approx + (n / approx))
+    return approx
+
+print ('Please enter a positive number: ', end = '' )
+
+while True:
+    try: 
+        n = float (input ('')) 
+        if n == '' or n <= 0:
+            raise ValueError ('Incorrect input.')
+        break
+    except ValueError:
+        print (f'This is not a positive number. Try again: ', end ='')
+
+rawResult = (sqrt (n))
+
+print ('Do you want to round the result?', end = ' ')
+while True: 
+    try: 
+        rounding = input ('Press Y for \'yes\' \ N or leave blank for \'no\': ')
+
+        if rounding == 'Y' or rounding == 'y': 
+            print ('Enter the number of decimals for the answer rounding: ', end = '')
+           
+           while True: 
+                try:
+                    r = int (input ('')) 
+                    if r < 0:
+                        raise ValueError ('Number of decimals cannot be negative.')
+                    break
+                except ValueError:
+                        print ('Invalid input. Please input a positive integer: ', end = '')
+            
+            if r == 0: 
+                rAnswer = round (sqrt(n))
+                print (f'The approximate square root of {n} rounded to the closest whole number is {round(rAnswer)}') 
+            else: 
+                rAnswer = round ((sqrt(n)), r)
+                print (f'The approximate square root of {n} rounded to {r} decimal place(s) is {rAnswer}')
+            break
+
+        if rounding == 'N' or rounding == 'n' or rounding == '':
+            print (f'The approximate square root of {n} is {rawResult}')
+        else: 
+            raise ValueError ('Invalid input.')
+        break
+    except ValueError: 
+        print ('Invalid input.')
+```
 
 [squareRoot.py](https://github.com/dariairad/pands-problem-sheet/blob/main/squareRoot.py)
 
 ### Explanation
+
+1. 
 
 ### References
 
@@ -229,7 +290,7 @@ You should create a function called <tt>sqrt</tt> that does this.
 4. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
 5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
-## Week 07
+## Week 07 - Files
 
 ### Task description
 
@@ -278,7 +339,7 @@ print (f'This file contains a total of {total} instances of letter "e". \nOut of
 4. python.org - *sys — System-specific parameters and functions.* https://docs.python.org/3/library/sys.html#module-sys
 5. realpython.com - *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
 
-## Week 08
+## Week 08 - Looking Ahead
 
 ### Task description
 
