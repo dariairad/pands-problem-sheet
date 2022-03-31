@@ -199,7 +199,8 @@ else:
 ### Explanation
 1. Used `Datetime` module that supplies classes to work with date and time.
 2. `today()` function of date class returns the current local date, while `weekday()` returns the day of the week as integer where Monday is 0 and Sunday is 6
-3. Integers 0-4 correspond to Monday-Friday respectively, therefore any integer lower than 5 (< 5) corresponds to a weekday. 
+3. Integers from 0 to 4 correspond to Monday-Friday respectively, therefore any integer lower than 5 (< 5) corresponds to a weekday. 
+4. Used `if` statement to set conditions for the output messages.  
 
 ### References
 1. geeksforgeeks.com - *Python datetime module.* https://www.geeksforgeeks.org/python-datetime-module/
