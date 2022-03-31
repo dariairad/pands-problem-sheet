@@ -2,13 +2,12 @@
 
 # Task Description:
 # Program that calculates Body Mass Index (BMI). 
-# The inputs are the persons's height in centimetres and weight in kilograms. 
-# The output is their BMI.
+# The inputs are the persons's height in centimetres and weight in kilograms. The output is thei
 
 # Additions:
 # - Personalised welcome message based on the user input
-# - Error handling for weight and height inputs
-#   (non-numerical inputs, numerical inputs lower or equal to 0, and blank inputs throw an error and prompt user to try again)
+# - Error handling for weight and height inputs:
+#       non-numerical inputs as well as numerical inputs lower or equal to 0 throw an error and prompt user to try again
 # - BMI interpretation (Underweight, Normal, Overweight, Obese)
 
 # Author: Daria Sep
@@ -27,19 +26,21 @@ while True:
     try: 
         weight = float (input ('Enter your weight in kg: '))
         if weight == "" or weight <= 0:
-            raise ValueError ('Incorrect value entered. Weight cannot be 0 or below.')
+            raise ValueError ('Incorrect value entered.')
     except ValueError:
             print("Sorry, that's not right. Please try again")      
-    else: break   
+    else: 
+        break   
 
 while True: 
     try:
         height = float (input ('Enter your height in cm: '))
         if height == "" or height <= 0:
-            raise ValueError ('Incorrect value entered. Height cannot be 0 or below.')
+            raise ValueError ('Incorrect value entered.')
     except ValueError: 
         print("Sorry, that's not right. Please try again")
-    else: break
+    else: 
+        break
             
 # Calling the function and using round() to round the calculation's output to 2 decimal places
 bmi = round (bmiIndex (weight, height), 2)
