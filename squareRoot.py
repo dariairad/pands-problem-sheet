@@ -26,7 +26,6 @@ while True:
         print (f'This is not a positive number. Try again: ', end ='')
 
 rawResult = (sqrt (n))
-print (f'The approximate square root of {n} is {rawResult}')
 
 # extra: offering option of rounding the result to the chosen number of decimal places
 print ('Do you want to round the result?', end = ' ')
@@ -54,7 +53,7 @@ while True:
             break
 
         if rounding == 'N' or rounding == 'n' or rounding == '':
-            print ('Ok, that\'s it then. See you later :)')
+            print (f'The approximate square root of {n} is {rawResult}')
             quit
         else: 
             raise ValueError ('Invalid input.')
