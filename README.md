@@ -134,17 +134,24 @@ Have the program end if the current value is one.
 ### Code
 
 ```
-number = int (input ('Please input a number: '))
+while True:     
+    try:       
+        number = int (input ('Please input a positive integer: '))
+        if number <= 0 or number == '':
+            raise ValueError ('Incorrect value.')
+        break
+    except ValueError:
+        print ('Incorrect input. Please try again.')
 
-while number != 1: 
+while number != 1:  
 
     print(number, end = ' ')  
-    
+        
     if (number % 2) == 0:
         number = int (number / 2)
     else:
         number = int ((number * 3) + 1)
-
+    
 print (number)
 ```
 
@@ -153,10 +160,12 @@ print (number)
 ### Explanation
 
 1. Used `input()` to allow the user to choose the initial number, and `int()` to convert the input into an integer for calculations.
-2. Set `while` condition to `!=` (not eqal to) 1 for the program to continue calculations until the output is  1.
-3. Python’s `print()` function comes with an 'end' parameter. By default, the value of this parameter is `\n`. Set 'end' to spece to print outputs in one line. 
-4. `(number % 2) == 0` checkes if a number is divisable by 2, ie. even. If condition is satisfied, the number is being divided by 2. Otherwise, for odd numbers, the program multiplies it by 3 and adds 1. 
-5. `print(number)` in the last line adds number 1 into the final output.
+2. Used `try/except` to catch incorrect inputs (non-ints, blanks, numbers equal to or lower than 0) and `while` loop to keep prompting the user for input in case of exception being raised. 
+3. Once correct input has been provided, the program proceed to calculations. 
+4. Set `while` condition to `!=` (not eqal to) 1 for the program to continue calculations until the output is  1.
+5. Python’s `print()` function comes with an `end` parameter - `\n` by default. I set `end` to space so the outputs are printed in single line. 
+6. `(number % 2) == 0` checkes if a number is divisable by 2, ie. even. If condition is satisfied, the number is being divided by 2. Otherwise, for odd numbers, the program multiplies it by 3 and adds 1. 
+7. `print(number)` in the last line adds number 1 into the final output.
 
 ### References
 
