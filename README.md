@@ -27,6 +27,12 @@ The purpose of this README file is to provide insights into the process of writi
 Write a program that calculates somebody's Body Mass Index (BMI). Call the file bmi.py
 The inputs are the person's height in centimetres and weight in kilograms. The output is their BMI.
 
+### Extras
+
+- Personalised welcome message based on the user input
+- Error handling for weight and height inputs: non-numerical input, numerical inputs equal to or lower that 0, and blank inputs throw an error and prompt the user to try again.
+- BMI interpretation (Underweight, Normal, Overweight, Obese)
+
 ### Code
 
 ```
