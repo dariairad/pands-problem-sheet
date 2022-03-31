@@ -54,7 +54,6 @@ while True:
 
         if rounding == 'N' or rounding == 'n' or rounding == '':
             print (f'The approximate square root of {n} is {rawResult}')
-            quit
         else: 
             raise ValueError ('Invalid input.')
         break
