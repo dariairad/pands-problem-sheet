@@ -37,7 +37,8 @@ The inputs are the person's height in centimetres and weight in kilograms. The o
 
 ```
 name = input('Welcome to the BMI Calculator! \nWhat\'s your name? ')
-print (f'Hello {name}! Let\'s calculate your BMI.') 
+print(f'Hello {name}! Let\'s calculate your BMI.') 
+
 
 def bmiIndex(weight, height):
     rawBmi = (weight / (height ** 2) * 10000)
@@ -45,34 +46,34 @@ def bmiIndex(weight, height):
 
 while True:
     try: 
-        weight = float (input ('Enter your weight in kg: '))
-        if weight == "" or weight <= 0:
-            raise ValueError ('Incorrect value entered.')
+        weight = float(input('Enter your weight in kg: '))
+        if weight == '' or weight <= 0:
+            raise ValueError('Incorrect value entered.')
     except ValueError:
-            print("Sorry, that's not right. Please try again.")      
+            print('Sorry, that\'s not right. Please try again.')      
     else: 
         break   
 
 while True: 
     try:
-        height = float (input ('Enter your height in cm: '))
-        if height == "" or height <= 0:
-            raise ValueError ('Incorrect value entered.')
+        height = float(input ('Enter your height in cm: '))
+        if height == '' or height <= 0:
+            raise ValueError('Incorrect value entered.')
     except ValueError: 
-        print("Sorry, that's not right. Please try again.")
+        print('Sorry, that\'s not right. Please try again.')
     else: 
         break
             
-bmi = round (bmiIndex (weight, height), 2)
+bmi = round(bmiIndex (weight, height), 2)
 
 if bmi < 18.5: 
-    print (f'Your BMI is {bmi}. You might be underweight.')
+    print(f'Your BMI is {bmi}. You might be underweight.')
 elif  bmi < 25:
-    print (f'Your BMI is {bmi}. You\'re a healthy weight.')
+    print(f'Your BMI is {bmi}. You\'re a healthy weight.')
 elif  bmi < 30:
     print(f'Your BMI is {bmi}. You might be overweight.')
 else:
-    print (f'Your BMI is {bmi}. You might be obese.')
+    print(f'Your BMI is {bmi}. You might be obese.')
 ```
 [bmi.py](https://github.com/dariairad/pands-problem-sheet/blob/main/bmi.py)
 
@@ -88,12 +89,12 @@ else:
 
 ### References
 
-1. diabetes.ca - *Body Mass Index (BMI) Calculator.* https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
-2. Elkner, J. (2020). - *Beginning Python Programming for Aspiring Web Developers.* https://www.openbookproject.net/books/bpp4awd/ch04.html  
-3. geeksforgeeks.com - *Python Arithmetic Operators.* https://www.geeksforgeeks.org/python-arithmetic-operators/ 
-4. stackoverflow.com - *BMI with exception handling python.* https://stackoverflow.com/questions/51125220/bmi-with-exception-handling-python 
+1. Canadian Diabetes Association (2022). *Body Mass Index (BMI) Calculator.* https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
+2. Elkner, J. (2020). *Beginning Python Programming for Aspiring Web Developers.* https://www.openbookproject.net/books/bpp4awd/ch04.html  
+3. Singh Rautelam, Y. (2020). *Python Arithmetic Operators.* https://www.geeksforgeeks.org/python-arithmetic-operators/ 
+4. StackOverflow (2018). *BMI with exception handling python.* https://stackoverflow.com/questions/51125220/bmi-with-exception-handling-python 
 5. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
-6. w3schools.com - *Built-in Functions.* https://www.w3schools.com/python/python_ref_functions.asp
+6. W3Schools (n.d.). *Built-in Functions.* https://www.w3schools.com/python/python_ref_functions.asp
 
 
 ## Week 03 - Variables
@@ -105,8 +106,8 @@ Write a program that asks a user to input a string and outputs every second lett
 ### Code
 
 ```
-sentence = input ('Please enter a sentence: ')
-print (sentence [::-2])
+sentence = input('Please enter a sentence: ')
+print(sentence [::-2])
 ```
 
 [secondString.py](https://github.com/dariairad/pands-problem-sheet/blob/main/secondString.py)
@@ -119,8 +120,8 @@ print (sentence [::-2])
 
 ### References
 
-1. w3schools.com - *How to Reverse a String in Python.* https://www.w3schools.com/python/python_howto_reverse_string.asp
-2. w3schools.com - *Python slice() Function.* https://www.w3schools.com/python/ref_func_slice.asp
+1. W3Schools (n.d.). *How to Reverse a String in Python.* https://www.w3schools.com/python/python_howto_reverse_string.asp
+2. W3Schools (n.d.). *Python slice() Function.* https://www.w3schools.com/python/ref_func_slice.asp
 
 
 ## Week 04 - Controlling the flow
@@ -136,23 +137,22 @@ Have the program end if the current value is one.
 ```
 while True:     
     try:       
-        number = int (input ('Please input a positive integer: '))
+        number = int(input ('Please input a positive integer: '))
         if number <= 0 or number == '':
-            raise ValueError ('Incorrect value.')
+            raise ValueError('Incorrect value.')
         break
     except ValueError:
-        print ('Incorrect input. Please try again.')
+        print('Incorrect input. Please try again.')
 
 while number != 1:  
-
     print(number, end = ' ')  
         
     if (number % 2) == 0:
         number = int (number / 2)
     else:
-        number = int ((number * 3) + 1)
+        number = int((number * 3) + 1)
     
-print (number)
+print(number)
 ```
 
 [collatz.py](https://github.com/dariairad/pands-problem-sheet/blob/main/collatz.py)
@@ -169,10 +169,10 @@ print (number)
 
 ### References
 
-1. codippa.com - *Check if number is even or odd.* https://codippa.com/even-odd-python/
-2. geeksforgeeks.com - *Python end parameter in print().* https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
-3. pythonppl.com - *Understanding Collatz Sequence in Python.* https://www.pythonpool.com/collatz-sequence-python/
-4. realpython.com - *Python "while" Loops (Indefinite Iteration).* https://realpython.com/python-while-loop/
+1. Codippa (n.d.). *Check if number is even or odd.* https://codippa.com/even-odd-python/
+2. Bindal, A. (2021). *Python end parameter in print().* https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print
+3. PythonPool (2021). *Understanding Collatz Sequence in Python.* https://www.pythonpool.com/collatz-sequence-python/
+4. Sturtz, J. (2018). *Python "while" Loops (Indefinite Iteration).* https://realpython.com/python-while-loop/
 5. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
 
 
@@ -191,7 +191,7 @@ if date.today().weekday() < 5:
     print('Yes, unfortunately today is a weekday')
 
 else:
-    print ('It is the weekend, yay!')
+    print('It is the weekend, yay!')
 ```
 
 [weekday.py](https://github.com/dariairad/pands-problem-sheet/blob/main/weekday.py)
@@ -203,9 +203,9 @@ else:
 4. Used `if` statement to set conditions for the output messages.  
 
 ### References
-1. geeksforgeeks.com - *Python datetime module.* https://www.geeksforgeeks.org/python-datetime-module/
-2. python.org - *Basic date and time types.* https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
-3. pythontic.com - *Weekday Function In Python.* https://pythontic.com/datetime/date/weekday
+1. GeeksForGeeks (2021). *Python datetime module.* https://www.geeksforgeeks.org/python-datetime-module/
+2. The Python Software Foundation (n.d.). *Basic date and time types.* https://docs.python.org/3/library/datetime.html?highlight=datetime%20module 
+3. Pythontic (n.d). *Weekday Function In Python.* https://pythontic.com/datetime/date/weekday
 
 
 ## Week 06 - Functions
@@ -229,51 +229,51 @@ def sqrt(n):
         better = 0.5 * (approx + (n / approx))
     return approx
 
-print ('Please enter a positive number: ', end = '' )
+print('Please enter a positive number: ', end = '' )
 
 while True:
     try: 
-        n = float (input ('')) 
+        n = float(input ('')) 
         if n == '' or n <= 0:
-            raise ValueError ('Incorrect input.')
+            raise ValueError('Incorrect input.')
         break
     except ValueError:
-        print (f'This is not a positive number. Try again: ', end ='')
+        print(f'This is not a positive number. Try again: ', end ='')
 
 rawResult = (sqrt (n))
 
-print ('Do you want to round the result?', end = ' ')
+print('Do you want to round the result?', end = ' ')
 while True: 
     try: 
-        rounding = input ('Press Y for \'yes\' \ N or leave blank for \'no\': ')
+        rounding = input('Press Y for \'yes\' \ N or leave blank for \'no\': ')
 
         if rounding == 'Y' or rounding == 'y': 
-            print ('Enter the number of decimals for the answer rounding: ', end = '')
+            print('Enter the number of decimals for the answer rounding: ', end = '')
            
            while True: 
                 try:
-                    r = int (input ('')) 
+                    r = int(input ('')) 
                     if r < 0:
-                        raise ValueError ('Number of decimals cannot be negative.')
+                        raise ValueError('Number of decimals cannot be negative.')
                     break
                 except ValueError:
-                        print ('Invalid input. Please input a positive integer: ', end = '')
+                        print('Invalid input. Please input a positive integer: ', end = '')
             
             if r == 0: 
-                rAnswer = round (sqrt(n))
-                print (f'The approximate square root of {n} rounded to the closest whole number is {round(rAnswer)}') 
+                rAnswer = round(sqrt(n))
+                print(f'The approximate square root of {n} rounded to the closest whole number is {round(rAnswer)}') 
             else: 
                 rAnswer = round ((sqrt(n)), r)
-                print (f'The approximate square root of {n} rounded to {r} decimal place(s) is {rAnswer}')
+                print(f'The approximate square root of {n} rounded to {r} decimal place(s) is {rAnswer}')
             break
 
         if rounding == 'N' or rounding == 'n' or rounding == '':
-            print (f'The approximate square root of {n} is {rawResult}')
+            print(f'The approximate square root of {n} is {rawResult}')
         else: 
-            raise ValueError ('Invalid input.')
+            raise ValueError('Invalid input.')
         break
     except ValueError: 
-        print ('Invalid input.')
+        print('Invalid input.')
 ```
 
 [squareRoot.py](https://github.com/dariairad/pands-problem-sheet/blob/main/squareRoot.py)
@@ -284,11 +284,11 @@ while True:
 
 ### References
 
-1. geeksforgeeks.com - *Find root of a number using Newton’s method.* https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
-2. runestone.academy - *How to Think Like a Computer Scientist.* https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
-3. school-for-champions.com - *Newton's Square Root Approximation.* https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
+1. Agrawal, U. (2022). *Find root of a number using Newton’s method.* https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+2. Runestone Interactive (n.d.). *How to Think Like a Computer Scientist.* https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
+3. Kurtus, R. (2022). *Newton's Square Root Approximation.* https://www.school-for-champions.com/algebra/square_root_approx.htm#.Yi-kwejP3GI
 4. Sweigart, A. (2020). *Automate the Boring Stuff with Python.* 2nd ed. San Francisco: No Starch Press.
-5. w3schools.com - Python Functions. https://www.w3schools.com/python/python_functions.asp
+5. W3Schools - Python Functions. https://www.w3schools.com/python/python_functions.asp
 
 ## Week 07 - Files
 
@@ -308,7 +308,8 @@ filename = sys.argv[1]
 def countEs(filename):      
     with open(filename) as f:
         text = f.read()
-        numLower = numUpper = numTotal = 0  # starting to count from 0
+        numLower = numUpper = numTotal = 0
+        
         for i in text:
             if i == 'e':        
                 numLower += 1   
@@ -318,13 +319,12 @@ def countEs(filename):
                 numTotal += 1                      
         return (numLower, numUpper, numTotal)
 
-values = countEs (filename)
+values = countEs(filename)
+lower = values[0] 
+upper = values[1]
+total = values[2]
 
-lower = values [0] 
-upper = values [1]
-total = values [2]
-
-print (f'This file contains a total of {total} instances of letter "e". \nOut of {total}, {lower} are lowercase and {upper} are uppercase.')
+print(f'This file contains a total of {total} instances of letter "e". \nOut of {total}, {lower} are lowercase and {upper} are uppercase.')
 ```
 
 [es.py](https://github.com/dariairad/pands-problem-sheet/blob/main/es.py)
@@ -333,11 +333,11 @@ print (f'This file contains a total of {total} instances of letter "e". \nOut of
 
 ### References
 
-1. Coding Under Pressure - *Command Line Arguments in Python - How to Read Command Line Arguments in Python.* https://youtu.be/QJBVjBq4c7E
-2. geeksforgeeks.com - *Count the number of times a letter appears in a text file.* https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-3. note.nkmk.me - *How to return multiple values from a function in Python.* https://note.nkmk.me/en/python-function-return-multiple-values/
-4. python.org - *sys — System-specific parameters and functions.* https://docs.python.org/3/library/sys.html#module-sys
-5. realpython.com - *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
+1. Coding Under Pressure (2021). *Command Line Arguments in Python - How to Read Command Line Arguments in Python.* https://youtu.be/QJBVjBq4c7E
+2. Saha, R. (2022). *Count the number of times a letter appears in a text file.* https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+3. Nkmk (2019). *How to return multiple values from a function in Python.* https://note.nkmk.me/en/python-function-return-multiple-values/
+4. The Python Software Foundation (n.d.). *sys — System-specific parameters and functions.* https://docs.python.org/3/library/sys.html#module-sys
+5. Sturtz, J. (2018). *Lists and Tuples in Python.* https://realpython.com/python-lists-tuples/
 
 ## Week 08 - Looking Ahead
 
@@ -353,4 +353,10 @@ Write a program called plottask.py that displays a plot of the functions f(x)=x,
 
 ### References
 
+##
 
+### Additional References
+
+GitHub (n.d.) *Basic writing and formatting syntax.* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+Markdown Guide (n.d.). *Basic Syntax - The Markdown elements outlined in the original design document.* https://www.markdownguide.org/basic-syntax/#overview
+Van Rossum, G., Warsaw, B., Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code.* https://peps.python.org/pep-0008/
