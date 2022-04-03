@@ -4,8 +4,8 @@
 
 # Author: Daria Sep
 
-sentence = input ('Please enter a sentence: ')
-print (sentence [::-2])
+sentence = input('Please enter a sentence: ')
+print(sentence [::-2])
 
 # Reversing a string using a slice that steps backwards, -2. There is no built-in function.
 # Syntax: slice(start, end, step)

@@ -5,7 +5,7 @@
 # Author: Daria Sep
 
 
-from datetime import date       # Extracting today's date
+from datetime import date       # Extracting today's date.
 
 # today() - returns the current local date.
 # weekday() - returns the day of the week as integer where Monday is 0 and Sunday is 6.
@@ -14,7 +14,7 @@ from datetime import date       # Extracting today's date
 if date.today().weekday() < 5:
     print('Yes, unfortunately today is a weekday.')
 else:
-    print ('It is the weekend, yay!')
+    print('It is the weekend, yay!')
 
 
     
