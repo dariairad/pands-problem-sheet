@@ -357,6 +357,6 @@ Write a program called plottask.py that displays a plot of the functions f(x)=x,
 
 ### Additional References
 
-GitHub (n.d.) *Basic writing and formatting syntax.* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-Markdown Guide (n.d.). *Basic Syntax - The Markdown elements outlined in the original design document.* https://www.markdownguide.org/basic-syntax/#overview
-Van Rossum, G., Warsaw, B., Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code.* https://peps.python.org/pep-0008/
+1. GitHub (n.d.) *Basic writing and formatting syntax.* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+2. Markdown Guide (n.d.). *Basic Syntax - The Markdown elements outlined in the original design document.* https://www.markdownguide.org/basic-syntax/#overview
+3. Van Rossum, G., Warsaw, B., Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code.* https://peps.python.org/pep-0008/
