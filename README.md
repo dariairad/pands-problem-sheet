@@ -216,7 +216,7 @@ Write a program that takes a positive floating-point number as input and outputs
 You should create a function called <tt>sqrt</tt> that does this.
 Create your own sqrt function and do not use the built in functions x ** .5 or math.sqrt(x).
 This is to demonstrate that you can research and code a process.
-Suggestion: Look at the newton method of estimating square roots.
+Suggestion: Look at the Newton's Method of estimating square roots.
 
 ### Code
 
@@ -240,7 +240,7 @@ while True:
     except ValueError:
         print(f'This is not a positive number. Try again: ', end ='')
 
-rawResult = (sqrt (n))
+rawResult = sqrt(n)
 
 print('Do you want to round the result?', end = ' ')
 while True: 
@@ -263,7 +263,7 @@ while True:
                 rAnswer = round(sqrt(n))
                 print(f'The approximate square root of {n} rounded to the closest whole number is {round(rAnswer)}') 
             else: 
-                rAnswer = round ((sqrt(n)), r)
+                rAnswer = round(sqrt(n), r)
                 print(f'The approximate square root of {n} rounded to {r} decimal place(s) is {rAnswer}')
             break
 
@@ -280,7 +280,21 @@ while True:
 
 ### Explanation
 
-1. 
+1. Started with creating a custom function `sqrt(n)` that calculates the square root approximation based on Newton's Method.
+   The function takes in one argument, a (positive) number.
+    - The variable `approx` is a starting point for the calculations and stores value `0.5 * n` as the square root of a number can't be less than half of it's value.
+    - The variable `better` stores output of the square root approximation method formula. The formula takes in the number (`n`) and the initial approximation (`approx`) for the calculations: `0.5 * (approx + (n / approx))`.
+    - Once better approximation (`better`) is calculated the output of the calculation replaces the initial approximation and is now stored under `approx` variable. 
+    - New value of the `approx`is now being used in the calculation to find even better approximation of the square root.
+    - The cycle continues as long as better approximation can be found, i.e. until values  of `better` and `approx` aren't equal (`better != approx`).
+ 2. Next follows the `print()` function that includes a message asking user for an input. 
+ 3. The input itself, stored as `n`, is taken in separately preventing the same message from being displayed where exception is identified. 
+ 4. In order to allow for the calculations, the input taken in needs to be a positive float (or int). 
+ 5. `try/except` statement is used for input validation. Along with values of format other than str or int, the following are also identified as invalid inputs: negative numbers, 0, blank input. Due to the use of the `while` loop, the user is being prompted for an input until valid input is provided.
+ 6. Once valid input is provided, the function `sqrt(n)`is being called and stored under `rawResult` variable.
+ 7. Instead of displaying the result straight away, the user gets to choose whether they want to a raw or rounded result to be returned - Yes/No choice. The answer is validated using `try/except` block. The `while` loop is used to keep prompting for valid input where needed. 
+ 8. After a valid input is provided, the `if`statement is used to define next steps. If user chooses the rounding option, they can then also set the number of decimal places used for the rounding, incl. 0 to round to the closest whole number/int. In here the input needs to be a positive int or a 0. Again, the `try/except` block and `while` loop are being used. If valid input is provided, `round()`function is used to round the result. 
+ 9. If user chooses not to round the result, the raw value is given (`rawResult`).
 
 ### References
 
