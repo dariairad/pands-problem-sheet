@@ -18,7 +18,7 @@ print ('Please enter a positive number: ', end = '' )
 # Catching invalid inputs and prompting user to input another value.
 while True:
     try: 
-        n = float (input (''))   # User input for n.
+        n = float (input(''))   # User input for n.
         if n == '' or n <= 0:
             raise ValueError ('Incorrect input.')
         break
@@ -32,12 +32,13 @@ print('Do you want to round the result?', end = ' ')
 while True: 
     try: 
         rounding = input('Press Y for \'yes\' \ N or leave blank for \'no\': ')
-
+        
         if rounding == 'Y' or rounding == 'y': 
             print('Enter the number of decimals for the answer rounding: ', end = '')
+            
             while True: 
                 try:
-                    r = int(input ('')) # user input for rounding
+                    r = int(input('')) # user input for rounding
                     if r < 0:
                         raise ValueError('Number of decimals cannot be negative.')
                     break
@@ -45,10 +46,10 @@ while True:
                         print('Invalid input. Please input a positive integer: ', end = '')
             
             if r == 0: 
-                rAnswer = round (sqrt(n))
+                rAnswer = round(sqrt(n))
                 print(f'The approximate square root of {n} rounded to the closest whole number is {round(rAnswer)}') 
             else: 
-                rAnswer = round ((sqrt(n)), r)
+                rAnswer = round(sqrt(n), r)
                 print(f'The approximate square root of {n} rounded to {r} decimal place(s) is {rAnswer}')
             break
 
