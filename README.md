@@ -338,7 +338,7 @@ lower = values[0]
 upper = values[1]
 total = values[2]
 
-print(f'This file contains a total of {total} instances of letter "e".
+print(f'This file contains a total of {total} instances of letter "e".')
 print(f'Out of {total}, {lower} are lowercase and {upper} are uppercase.')
 ```
 
