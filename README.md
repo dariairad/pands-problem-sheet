@@ -358,7 +358,7 @@ print(f'Out of {total}, {lower} are lowercase and {upper} are uppercase.')
 
 ### Task description
 
-Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on one set of axes.
 
 ### Code
 
@@ -390,21 +390,22 @@ plot.show()
 ### Explanation
 
 1. Started with importing `numpy` and `matplotlib.pyplot` modules that are used for working with arrays and graph plotting respectively. 
-2. Created the `ndarray` object by passing a `range()` object into the `array()` function, and stored it in a `xpoints` variable. These are the values of parameter 'x' shown on the `x-axis`.
+2. Created the `ndarray` object by passing a `range()` object into the `array()` function, and stored it in a `xpoints` variable. These are the values of parameter x shown on the x-axis.
 3. The `range()` takes in 3 arguments: start, stop and (optional) step. As the the range of integers ends at `stop - 1`, therefore it needs to be set to (0,5) in order to stop at 4.   
-4. The values of parameter 'y' are depended on the function used. These values are stored under three seperate variables, one for each function. 
-5. The `plot()` function is then used to draw points in a diagram. 3 grapghs are drawn to represent each function. 
-6. For each graph, the `plot()` function: takes in the varaibles storing `x` and `y` parameters. Additionally `labels` and `colours`of the graph are defined within the `plot()` function. 
+4. The values of parameter y are depended on the function used. These values are stored under three seperate variables, one for each function. 
+5. The `plot()` function is then used to draw points in a diagram. Three plots are drawn, one for each function (f(x), g(x) h(x)). 
+6. For each graph, the `plot()` function: takes in the varaibles storing x and y parameters. Additionally `labels` and `colours` of the plot are defined within the `plot()` function. 
 7. `\N{SUPERSCRIPT NUMBER}` was used to format the value of the exponent into superscript. 
-8. `title()`function allows to set the title for the graph, while `legend()` displays the legend on the graph. 
-9. Finally, `show()` function dsiplays the graph. 
+8. `title()`function allows to set the title for the plot, while `legend()` displays the legend on the plot. 
+9. Finally, `show()` function dsiplays the plot. 
 
 ### References
 
-1. StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
-2. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
-3. W3Schools (n.p.). *Matplotlib Plotting.* https://www.w3schools.com/python/matplotlib_plotting.asp
-4. W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
+1. Programiz (n.d.). *Python range()*. https://www.programiz.com/python-programming/methods/built-in/range
+2. StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
+3. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+4. W3Schools (n.p.). *Matplotlib Plotting.* https://www.w3schools.com/python/matplotlib_plotting.asp
+5. W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 
 ##
 
