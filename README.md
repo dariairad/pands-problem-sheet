@@ -393,10 +393,10 @@ plot.show()
 
 ### References
 
-StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
-Solomon, B. (2018). *Python Plotting With Matplotlib (Guide).* https://realpython.com/python-matplotlib-guide/#a-burst-of-color-imshow-and-matshow
-The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
-W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
+1. StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
+2. Solomon, B. (2018). *Python Plotting With Matplotlib (Guide).* https://realpython.com/python-matplotlib-guide/#a-burst-of-color-imshow-and-matshow
+3. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+4. W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 
 ##
 
