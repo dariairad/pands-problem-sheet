@@ -389,13 +389,21 @@ plot.show()
 
 ### Explanation
 
-
+1. Started with importing `numpy` and `matplotlib.pyplot` modules that are used for working with arrays and graph plotting respectively. 
+2. Created the `ndarray` object by passing a `range()` object into the `array()` function, and stored it in a `xpoints` variable. These are the values of parameter 'x' shown on the `x-axis`.
+3. The `range()` takes in 3 arguments: start, stop and (optional) step. As the the range of integers ends at `stop - 1`, therefore it needs to be set to (0,5) in order to stop at 4.   
+4. The values of parameter 'y' are depended on the function used. These values are stored under three seperate variables, one for each function. 
+5. The `plot()` function is then used to draw points in a diagram. 3 grapghs are drawn to represent each function. 
+6. For each graph, the `plot()` function: takes in the varaibles storing `x` and `y` parameters. Additionally `labels` and `colours`of the graph are defined within the `plot()` function. 
+7. `\N{SUPERSCRIPT NUMBER}` was used to format the value of the exponent into superscript. 
+8. `title()`function allows to set the title for the graph, while `legend()` displays the legend on the graph. 
+9. Finally, `show()` function dsiplays the graph. 
 
 ### References
 
 1. StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
-2. Solomon, B. (2018). *Python Plotting With Matplotlib (Guide).* https://realpython.com/python-matplotlib-guide/#a-burst-of-color-imshow-and-matshow
-3. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+2. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+3. W3Schools (n.p.). *Matplotlib Plotting.* https://www.w3schools.com/python/matplotlib_plotting.asp
 4. W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 
 ##
