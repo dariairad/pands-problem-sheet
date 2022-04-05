@@ -362,11 +362,41 @@ Write a program called plottask.py that displays a plot of the functions f(x)=x,
 
 ### Code
 
+```
+import numpy as np
+import matplotlib.pyplot as plot
+
+xpoints = np.array(range (0, 5))
+ypointsf = xpoints             
+ypointsg = xpoints * xpoints    
+ypointsh = xpoints ** 3         
+
+plot.plot(xpoints, ypointsf, label='f(x)=x', color='red')
+plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='green')
+plot.plot(xpoints, ypointsh, label='h(x)=x\N{SUPERSCRIPT THREE}', color='blue')
+
+plot.title('Exponents of x')
+plot.legend()
+
+plot.show()
+```
+
 [plotTask.py](https://github.com/dariairad/pands-problem-sheet/blob/main/plottask.py)
+
+### Plot
+
+![Figure_1](https://user-images.githubusercontent.com/98287400/161792510-b881d290-0b86-4d0a-b5f1-3273cca1327f.jpeg)
 
 ### Explanation
 
+
+
 ### References
+
+StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
+Solomon, B. (2018). *Python Plotting With Matplotlib (Guide).* https://realpython.com/python-matplotlib-guide/#a-burst-of-color-imshow-and-matshow
+The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 
 ##
 
@@ -374,4 +404,5 @@ Write a program called plottask.py that displays a plot of the functions f(x)=x,
 
 1. GitHub (n.d.) *Basic writing and formatting syntax.* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 2. Markdown Guide (n.d.). *Basic Syntax - The Markdown elements outlined in the original design document.* https://www.markdownguide.org/basic-syntax/#overview
-3. Van Rossum, G., Warsaw, B., Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code.* https://peps.python.org/pep-0008/
+3. Van Rossum, G., Warsaw, B., Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code.* https://peps.python.org/pep-0008/![Uploading Figure_1.jpeg…]()
+
