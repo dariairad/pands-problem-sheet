@@ -12,8 +12,8 @@ ypointsg = xpoints * xpoints    # g(x)=x2
 ypointsh = xpoints ** 3         # h(x)=x3
 
 plot.plot(xpoints, ypointsf, label='f(x)=x', color='red')
-plot.plot(xpoints, ypointsg, label='g(x)=x2', color='green')
-plot.plot(xpoints, ypointsh, label='h(x)=x3', color='blue')
+plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='green')
+plot.plot(xpoints, ypointsh, label='h(x)=x\N{SUPERSCRIPT THREE}', color='blue')
 
 plot.title('Exponents of x')
 plot.legend()
