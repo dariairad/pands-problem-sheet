@@ -346,6 +346,13 @@ print(f'Out of {total}, {lower} are lowercase and {upper} are uppercase.')
 
 ### Explanation
 
+1. Imported `sys` and used `sys.argv`, a list which contains the command-line arguments passed to the script. It allows taking in an input from an argument on the command line. The `sys.argv[0]` is the script itself, while the `sys.argv[1]` is the argument on the command line. Assumption here is that the name of the file the user want to work with follows the name of the script, i.e. it's position in the list of arguments on the command line is `[1]`. 
+2. This argument is stored as a variable `filename` that is taken in by the custom function `countEs` defined in the subsequent lines. 
+3. In order to get access and manipulate or read from to a file, the file needs to be opened. It is achieved by using `open()` function that returns file object, along with the `with` statement that allows for easier exception handling. Next, the `read()` function is used to read from the file object. 
+4. The `countEs()` function is set to return total number of es in the file despite of their case, as well as number of lower- and uppercase es. Each value is stored as separate variable. Initially, the value of all three variables is 0. 
+5. Using the `for` loop, each character in the file is checked and cross refferenced with the conditions defined under `if/elif` statement. Every time lower or upper case e is encountered, +1 is added to the respective variable, as well as the variable storing total number of es, and the values stored under these variables are updated to reflect the current state of the counter. The function returns all three variables as a list.
+6. The function is called and each value from the generated list is assigned a variable then used in the output message.
+
 ### References
 
 1. Coding Under Pressure (2021). *Command Line Arguments in Python - How to Read Command Line Arguments in Python.* https://youtu.be/QJBVjBq4c7E
