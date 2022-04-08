@@ -13,24 +13,18 @@ Andrew Beatty (andrew.beatty@gmit.ie)
 
 ## Overview
 
-This repository is a submission to *Problem Sheet* assignment associated with the *Programming and Scripting* module. 
-
-The repository itself contains 7 .py files that present solutions to 7 weekly tasks set throughout the course. 
-  
-The purpose of this README file is to provide insights into the process of writing the code, understanding of the code, as well as the research and refernences used.
-
+This repository is a submission to *Problem Sheet* assignment for the *Programming and Scripting* module. The repository contains seven .py files that present solutions to seven weekly tasks that were set throughout the course. The purpose of this README file is to provide insight into my process of researching and writing the code for those tasks. 
 
 ## Week 02 - Statements
 
 ### Task description
 
-Write a program that calculates somebody's Body Mass Index (BMI). Call the file bmi.py
-The inputs are the person's height in centimetres and weight in kilograms. The output is their BMI.
+Write a program that calculates somebody's Body Mass Index (BMI). Call the file bmi.py. The inputs are the person's height in centimetres and weight in kilograms. The output is their BMI.
 
 ### Extras
 
 - Personalised welcome message based on the user input
-- Error handling for weight and height inputs: non-numerical input, numerical inputs equal to or lower that 0, and blank inputs throw an error and prompt the user to try again.
+- Error handling for weight and height inputs: non-numerical input, numerical inputs equal to or lower than 0, and blank inputs throw an error and prompt the user to try again.
 - BMI interpretation (Underweight, Normal, Overweight, Obese)
 
 ### Code
@@ -79,13 +73,13 @@ else:
 
 ### Explanation
 
-1. Used `input()` function to allow user input. User input being used in the program: *name* - for personalised welcome message, and later on, *weight* and *height* - for BMI calculations.
-2. Created custom function `bmiIndex()` that takes in two arguments: *weight* and *height*, and includes formula for calculating BMI.
-3. As the program takes in *weight* and *height* from user input I used `try / except` to catch `ValueErrors` - non-numerical input, blank input, and numerical input equal or less than 0.
-4. Along with `try/except`, I used the `while` loop to keep prompting the user for correct input after the exception was raised.
+1. I used the `input()` function to allow user input. The following input is taken in: *name* - for personalisation, and later on, *weight* and *height* - for BMI calculations.
+2. I created custom function `bmiIndex()` that takes in two arguments: *weight* and *height*, and contains a formula for calculating BMI.
+3. As the program takes in *weight* and *height* from user input, I used `try / except` to catch `ValueErrors` - non-numeric input, blank input, and numerical input equal or less than 0.
+4. Along with `try/except`, I used the `while` loop to keep prompting the user for correct input after an exception was raised.
 5. As values read in with `input()` function are in a string format, I used the `float()` constructor that returns a float number to convert *weight* and *height* inputs into floats thus allowing for arithmetic operations.
-6. I called in a function and rounded the utput to 2 decimal places using the `round()` function.
-7. Used `if` statement to interpret the BMI and to provide the user with context regarding their result. 
+6. I called in the function and rounded the output to 2 decimal places using the `round()` function.
+7. I followed with an `if` statement to interpret the BMI and to provide the user with context regarding their result. 
 
 ### References
 
@@ -114,9 +108,10 @@ print(sentence [::-2])
 
 ### Explanation
 
-1. The `slice()` function returns a slice object. A slice object is used to specify how to slice a sequence. Syntax: slice(start, end, step)
-2. Reversd a string using a slice that steps backwards [x,y,-1]. Change step to -2 to satisfy task requirement of ouputing every second letter.
-3. The function's start and end prameter remain unchanged as full input sentence is to be considered. 
+1. I started with the `input()` function and stored the user input as a variable.
+2. I used the `slice()` function that returns a slice object. In this function, a slice object is used to specify how to slice a sequence `[start, end, step)]`.
+3. In order to reverse the string and output every second character, I used a slice that steps backwards with the value -2: `[x,y,-2]`. 
+4. The start and end parameters remain unchanged as full input is to be considered. 
 
 ### References
 
@@ -128,9 +123,7 @@ print(sentence [::-2])
 
 ### Task description
 
-Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
-At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
-Have the program end if the current value is one.
+Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.
 
 ### Code
 
@@ -159,12 +152,12 @@ print(number)
 
 ### Explanation
 
-1. Used `input()` to allow the user to choose the initial number, and `int()` to convert the input into an integer for calculations.
-2. Used `try/except` to catch incorrect inputs (non-ints, blanks, numbers equal to or lower than 0) and `while` loop to keep prompting the user for input in case of exception being raised. 
-3. Once correct input has been provided, the program proceed to calculations. 
-4. Set `while` condition to `!=` (not eqal to) 1 for the program to continue calculations until the output is  1.
-5. Python’s `print()` function comes with an `end` parameter - `\n` by default. I set `end` to space so the outputs are printed in single line. 
-6. `(number % 2) == 0` checkes if a number is divisable by 2, ie. even. If condition is satisfied, the number is being divided by 2. Otherwise, for odd numbers, the program multiplies it by 3 and adds 1. 
+1. I used `input()` to allow a user to choose the initial number, and `int()` to convert the input into an integer for calculations.
+2. I nested it under the `try/except` statement to catch any incorrect inputs (non-ints, blanks, numbers equal to or lower than 0) and used `while` loop to keep prompting the user for input in case of an exception being raised. 
+3. Once correct input is provided, the program proceeds to calculations. 
+4. I set the `while` condition to `!=` (not equal to) 1 for the program to continue calculations until the output is 1.
+5. Python’s `print()` function comes with an `end` parameter set to `\n` by default. I changed `end` to space to keep the outputs in one line. 
+6. `(number % 2) == 0` checks if a number is divisible by 2, ie. even. If the condition is satisfied, the number is divided by 2. Otherwise, for odd numbers, the program multiplies it by 3 and adds 1. 
 7. `print(number)` in the last line adds number 1 into the final output.
 
 ### References
@@ -197,10 +190,10 @@ else:
 [weekday.py](https://github.com/dariairad/pands-problem-sheet/blob/main/weekday.py)
 
 ### Explanation
-1. Used `Datetime` module that supplies classes to work with date and time.
-2. `today()` function of date class returns the current local date, while `weekday()` returns the day of the week as integer where Monday is 0 and Sunday is 6
+1. I started with importing the `datetime` module that supplies classes to work with date and time.
+2. I used the `today()` function that returns the current local date and `weekday()` that returns the day of the week as an integer where Monday is 0 and Sunday is 6.
 3. Integers from 0 to 4 correspond to Monday-Friday respectively, therefore any integer lower than 5 (< 5) corresponds to a weekday. 
-4. Used `if` statement to set conditions for the output messages.  
+4. I used the `if/else` statement to set conditions for the output messages.  
 
 ### References
 1. GeeksForGeeks (2021). *Python datetime module.* https://www.geeksforgeeks.org/python-datetime-module/
@@ -212,11 +205,7 @@ else:
 
 ### Task description
 
-Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
-You should create a function called <tt>sqrt</tt> that does this.
-Create your own sqrt function and do not use the built in functions x ** .5 or math.sqrt(x).
-This is to demonstrate that you can research and code a process.
-Suggestion: Look at the Newton's Method of estimating square roots.
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called <tt>sqrt</tt> that does this. Create your own sqrt function and do not use the built in functions x ** .5 or math.sqrt(x). This is to demonstrate that you can research and code a process. Suggestion: Look at Newton's Method of estimating square roots.
 
 ### Code
 
@@ -280,21 +269,20 @@ while True:
 
 ### Explanation
 
-1. Started with creating a custom function `sqrt(n)` that calculates the square root approximation based on Newton's Method.
-   The function takes in one argument, a (positive) number.
-    - The variable `approx` is a starting point for the calculations and stores value `0.5 * n` as the square root of a number can't be less than half of it's value.
+1. I started with creating a function `sqrt(n)` that calculates the square root approximation based on Newton's Method. The function takes in one argument, a (positive) number.
+    - The variable `approx` is a starting point for the calculations and stores value `0.5 * n` as the square root of a number can't be less than half of its value.
     - The variable `better` stores output of the square root approximation method formula. The formula takes in the number (`n`) and the initial approximation (`approx`) for the calculations: `0.5 * (approx + (n / approx))`.
-    - Once better approximation (`better`) is calculated the output of the calculation replaces the initial approximation and is now stored under `approx` variable. 
-    - New value of the `approx`is now being used in the calculation to find even better approximation of the square root.
-    - The cycle continues as long as better approximation can be found, i.e. until values  of `better` and `approx` aren't equal (`better != approx`).
- 2. Next follows the `print()` function that includes a message asking user for an input. 
- 3. The input itself, stored as `n`, is taken in separately preventing the same message from being displayed where exception is identified. 
+    - Once a better approximation (`better`) is calculated the output of the calculation replaces the initial approximation and is now stored under the `approx` variable. 
+    - New value of the `approx`is now used in the calculation to find an even better approximation of the square root.
+    - The cycle continues as long as better approximation can be found, i.e. until values of `better` and `approx` aren't equal (`better != approx`).
+ 2. Next follows the `print()` function that includes a message asking the user for an input. 
+ 3. The input itself, stored as `n`, is taken in separately, preventing the same message from being displayed where an exception is identified. 
  4. In order to allow for the calculations, the input taken in needs to be a positive float (or int). 
  5. `try/except` statement is used for input validation. Along with values of format other than str or int, the following are also identified as invalid inputs: negative numbers, 0, blank input. Due to the use of the `while` loop, the user is being prompted for an input until valid input is provided.
- 6. Once valid input is provided, the function `sqrt(n)`is being called and stored under `rawResult` variable.
- 7. Instead of displaying the result straight away, the user gets to choose whether they want to a raw or rounded result to be returned - Yes/No choice. The answer is validated using `try/except` block. The `while` loop is used to keep prompting for valid input where needed. 
+ 6. Once valid input is provided, the function `sqrt(n)`is being called and stored under the `rawResult` variable.
+ 7. Instead of displaying the result straight away, the user gets to choose whether they want a raw or rounded result to be returned - Yes/No choice. The answer is validated using `try/except` block. The `while` loop is used to keep prompting for valid input where needed. 
  8. After a valid input is provided, the `if`statement is used to define next steps. If user chooses the rounding option, they can then also set the number of decimal places used for the rounding, incl. 0 to round to the closest whole number/int. In here the input needs to be a positive int or a 0. Again, the `try/except` block and `while` loop are being used. If valid input is provided, `round()`function is used to round the result. 
- 9. If user chooses not to round the result, the raw value is given (`rawResult`).
+ 9. If the user chooses not to round the result, the raw value is given (`rawResult`).
 
 ### References
 
@@ -308,9 +296,7 @@ while True:
 
 ### Task description
 
-Write a program that reads in a text file and outputs the number of e's it contains. 
-Think about what is being asked here, document any assumptions you are making.
-The program should take the filename from an argument on the command line. 
+Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making. The program should take the filename from an argument on the command line. 
 
 ### Code
 
@@ -346,11 +332,11 @@ print(f'Out of {total}, {lower} are lowercase and {upper} are uppercase.')
 
 ### Explanation
 
-1. Imported `sys` and used `sys.argv`, a list which contains the command-line arguments passed to the script. It allows taking in an input from an argument on the command line. The `sys.argv[0]` is the script itself, while the `sys.argv[1]` is the argument on the command line. Assumption here is that the name of the file the user want to work with follows the name of the script, i.e. it's position in the list of arguments on the command line is `[1]`. 
+1. I started with importing the `sys` module and used `sys.argv`, a list which contains the command-line arguments passed to the script. It allows taking in an input from an argument on the command line. The `sys.argv[0]` is the script itself, while the `sys.argv[1]` is the argument on the command line. Assumption here is that the name of the file the user wants to work with, follows the name of the script, i.e. its position in the list of arguments on the command line is `[1]`. 
 2. This argument is stored as a variable `filename` that is taken in by the custom function `countEs` defined in the subsequent lines. 
-3. In order to get access and manipulate or read from a file, the file needs to be opened. It is achieved by using `open()` function that returns file object. Next, the `read()` function is used to read from the file object. 
-4. The `countEs()` function is set to return total number of es in the file despite of their case, as well as number of lower- and uppercase es. Each value is stored as separate variable. Initially, the value of all three variables is 0. 
-5. Using the `for` loop, each character in the file is checked and cross refferenced with the conditions defined under `if/elif` statement. Every time lower or upper case e is encountered, +1 is added to the respective variable, as well as the variable storing total number of es, and the values stored under these variables are updated to reflect the current state of the counter. The function returns all three variables as a list.
+3. In order to get access and manipulate or read from a file, the file needs to be opened. It is achieved by using the `open()` function that returns a file object. Next, the `read()` function is used to read from the file object. 
+4. The `countEs()` function is set to return the total number of es in the file despite their case, as well as a number of lower- and uppercase es. Each value is stored as a separate variable. Initially, the value of all three variables is 0. 
+5. Using the `for` loop, each character in the file is checked and cross-referenced with the conditions defined under the `if/elif` statement. Every time lower or upper case e is encountered, +1 is added to the respective variable, as well as the variable storing total number of es, and the values stored under these variables are updated to reflect the current state of the counter. The function returns all three variables as a list.
 6. The function is called and each value from the generated list is assigned a variable then used in the output message.
 
 ### References
@@ -379,11 +365,15 @@ ypointsf = xpoints
 ypointsg = xpoints * xpoints    
 ypointsh = xpoints ** 3         
 
-plot.plot(xpoints, ypointsf, label='f(x)=x', color='red')
-plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='green')
+plot.plot(xpoints, ypointsf, label='f(x)=x', color='magenta')
+plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='purple')
 plot.plot(xpoints, ypointsh, label='h(x)=x\N{SUPERSCRIPT THREE}', color='blue')
 
-plot.title('Exponents of x')
+
+plot.title('Exponential Functions')
+plot.xlabel('Values')
+plot.ylabel('Exponents of values')
+plot.grid()
 plot.legend()
 
 plot.show()
@@ -393,25 +383,25 @@ plot.show()
 
 ### Plot
 
-![Figure_1](https://user-images.githubusercontent.com/98287400/161792510-b881d290-0b86-4d0a-b5f1-3273cca1327f.jpeg)
+![Figure_2](https://user-images.githubusercontent.com/98287400/162533182-1de131f7-2da5-4329-8362-c8d4fd53400c.jpg)
 
 ### Explanation
 
-1. Started with importing `numpy` and `matplotlib.pyplot` modules that are used for working with arrays and graph plotting respectively. 
-2. Created the `ndarray` object by passing a `range()` object into the `array()` function, and stored it in a `xpoints` variable. These are the values of parameter x shown on the x-axis.
-3. The `range()` takes in 3 arguments: start, stop and (optional) step. As the the range of integers ends at `stop - 1`, therefore it needs to be set to (0,5) in order to stop at 4.   
-4. The values of parameter y are depended on the function used. These values are stored under three seperate variables, one for each function. 
-5. The `plot()` function is then used to draw points in a diagram. Three plots are drawn, one for each function (f(x), g(x) h(x)). 
-6. For each graph, the `plot()` function: takes in the varaibles storing x and y parameters. Additionally `labels` and `colours` of the plot are defined within the `plot()` function. 
-7. `\N{SUPERSCRIPT NUMBER}` was used to format the value of the exponent into superscript. 
-8. `title()`function allows to set the title for the plot, while `legend()` displays the legend on the plot. 
-9. Finally, `show()` function dsiplays the plot. 
+1. I started with importing `numpy` and `matplotlib.pyplot` modules that are used for working with arrays and graph plotting respectively. 
+2. An `ndarray` object has been created by passing a `range()` object into the `array()` function. The object is stored in an `xpoints` variable. These are the values of parameter x shown on the x-axis.
+3. The `range()` takes in 3 arguments: start, stop and (optional) step. As the range of integers ends at `stop - 1`, I set it to (0,5) in order to stop at 4.   
+4. The values of parameter y are dependent on the function used. I store these values under three separate variables, one for each function. 
+5. I then used the `plot()` function to draw points in a diagram. Three plots are drawn, one for each function (f(x), g(x) h(x)). 
+6. For each graph, the `plot()` function takes in the variables storing x and y parameters. Additionally `labels` and `colours` of the plots are defined within the `plot()` function. 
+7. I used `\N{SUPERSCRIPT NUMBER}` to format the value of the exponent into superscript. 
+8. I used the following: `title()` function to define the title for the plot, `legend()` to displays the legend on the plot, `ylabel()/xlabel()` to assign axis names, and `grid()` to display a grid on the graph.
+9. Finally, I used the `show()` function to display the plot. 
 
 ### References
 
 1. Programiz (n.d.). *Python range()*. https://www.programiz.com/python-programming/methods/built-in/range
 2. StackOverflow (2021). *Printing subscript in Python.* https://stackoverflow.com/questions/24391892/printing-subscript-in-python/24391972#24391972
-3. The Matplotlib Developement Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
+3. The Matplotlib Development Team (n.p.). *matplotlib.pyplot* https://matplotlib.org/stable/api/pyplot_summary.html
 4. W3Schools (n.p.). *Matplotlib Plotting.* https://www.w3schools.com/python/matplotlib_plotting.asp
 5. W3Schools (n.p.). *NumPy Getting Started.* https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 
