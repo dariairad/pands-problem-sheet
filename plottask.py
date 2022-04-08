@@ -11,11 +11,15 @@ ypointsf = xpoints
 ypointsg = xpoints * xpoints    
 ypointsh = xpoints ** 3         
 
-plot.plot(xpoints, ypointsf, label='f(x)=x', color='red')
-plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='green')
+plot.plot(xpoints, ypointsf, label='f(x)=x', color='magenta')
+plot.plot(xpoints, ypointsg, label='g(x)=x\N{SUPERSCRIPT TWO}', color='purple')
 plot.plot(xpoints, ypointsh, label='h(x)=x\N{SUPERSCRIPT THREE}', color='blue')
 
-plot.title('Exponents of x')
+
+plot.title('Exponential Functions')
+plot.xlabel('Values')
+plot.ylabel('Exponents of values')
+plot.grid()
 plot.legend()
 
 plot.show()
